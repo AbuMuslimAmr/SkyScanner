@@ -1,0 +1,24 @@
+{
+  "name": "SkyScanner",
+  "version": "1.0.0",
+  "description": "File Explorer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbuMuslimAmr/SkyScanner.git"
+  },
+  "author": "Amr Abdulrahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbuMuslimAmr/SkyScanner/issues"
+  },
+  "homepage": "https://github.com/AbuMuslimAmr/SkyScanner",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "express": "^4.13.3",
+    "file-browser": "0.0.5"
+  }
+}
