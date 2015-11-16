@@ -1,8 +1,5 @@
 <div class="panel panel-default container-panel" ng-controller="BrowseCtrl">
-    <div ng-show="loading">
-        Loading...
-    </div>
-    <div ng-hide="loading">
-        <node node="root"></node>
-    </div>
+    <p class="bg-warning path text-right lead"><strong>Path</strong></p>
+    <p class="bg-primary selected-file-path lead">{{'/' + $root.selectedNode.path}}</p>
+    <node node="root"></node>
 </div>

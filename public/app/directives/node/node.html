@@ -1,6 +1,9 @@
-<ul>
-  <li>
-    <span ng-click="open()">{{node.name + ' ' + node.isDir}}</span>
+<ul class="no-style">
+  <li ng-click="toggle()" class="file" ng-class="{folder: node.isDir, selected: node.path === $root.selectedNode.path}">
+    <i class="fa fa-file-o" ng-if="node.isDir === false"></i>
+    <i class="fa fa-folder-open" ng-if="node.isDir === true && node.open === true"></i>
+    <i class="fa fa-folder" ng-if="node.isDir === true  && !node.open"></i>
+    <span>{{node.name}}</span>
   </li>
   <li ng-if="node.open">
     <node ng-repeat="child in node.children" node="child"></node>

@@ -3,28 +3,12 @@
 
   angular
     .module('FileExplorerApp')
-    .controller('BrowseCtrl', function ($scope, api) {
-      //$scope.loading = true;
+    .controller('BrowseCtrl', function ($scope) {
       $scope.root = {
-        name: '.',
+        name: '(ROOT)',
         path: '',
-        level: 0,
         isDir: true,
         open: true
       };
-
-      $scope.open = function(query) {
-        return api
-          .browse(query)
-          .then(function(data) {
-            $scope.root.children = data;
-          });
-      };
-
-      //$scope
-      //  .open('')
-      //  .then(function() {
-      //    $scope.loading = false;
-      //  });
     });
 })();
