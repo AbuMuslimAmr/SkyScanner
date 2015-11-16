@@ -1,0 +1,8 @@
+<ul>
+  <li>
+    <span ng-click="open()">{{node.name + ' ' + node.isDir}}</span>
+  </li>
+  <li ng-if="node.open">
+    <node ng-repeat="child in node.children" node="child"></node>
+  </li>
+</ul>

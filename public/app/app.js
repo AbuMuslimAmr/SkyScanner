@@ -5,6 +5,7 @@
     .module('FileExplorerApp', [
       'ui.router',
       'ui.bootstrap',
-      'restangular'
+      'restangular',
+      'RecursionHelper'
     ]);
 })();

@@ -4,7 +4,7 @@ var fs = require('fs'),
 module.exports = function(dir) {
   return function(req, res) {
     var currentDir =  dir,
-        query = req.query.path || '';
+        query = req.params.query || '';
 
     if (query) {
       currentDir = path.join(dir, query);
@@ -24,18 +24,18 @@ module.exports = function(dir) {
 
             if (isDirectory) { // dir
               data.push({
-                Name: file,
-                IsDirectory: true,
-                Path: path.join(query, file)
+                name: file,
+                isDir: true,
+                path: path.join(query, file)
               });
             } else { // file
               var ext = path.extname(file);
 
               data.push({
-                Name: file,
-                Ext: ext,
-                IsDirectory: false,
-                Path: path.join(query, file)
+                name: file,
+                ext: ext,
+                isDir: false,
+                path: path.join(query, file)
               });
             }
           } catch(e) {

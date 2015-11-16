@@ -4,9 +4,9 @@
   angular
     .module('FileExplorerApp')
     .service('api', function(Restangular) {
-      function browse() {
+      function browse(query) {
         return Restangular
-          .one('browse')
+          .one('browse', query)
           .get();
       }
 
