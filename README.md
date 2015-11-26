@@ -2,9 +2,9 @@
 
 ## Install
 ```
-mkdir SkyScanner
-git clone git@github.com:AbuMuslimAmr/SkyScanner.git SkyScanner
-cd SkyScanner
+mkdir file-explorer
+git clone git@github.com:AbuMuslimAmr/file-explorer.git file-explorer
+cd file-explorer
 sudo npm install
 bower install
 node app
