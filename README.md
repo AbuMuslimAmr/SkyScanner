@@ -1,4 +1,4 @@
-# SkyScanner File Explorer with Node and Angular
+# File Explorer with Node and Angular
 
 ## Install
 ```
